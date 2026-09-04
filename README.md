@@ -3,33 +3,33 @@
 ## 1. Creating First Workflow
 
 ### Step 1
-GitHub repository open karo.
+Open your GitHub repository.
 
 ### Step 2
-`Actions` tab open karo.
+Open the `Actions` tab.
 
 ### Step 3
-`Setup a workflow yourself` par click karo.
+Click `Setup a workflow yourself`.
 
 ### Step 4
-VS Code me `GitHub Actions` plugin install karo aur GitHub se sign in karo.
+In VS Code, install the `GitHub Actions` plugin and sign in to GitHub.
 
 ### Step 5
-Project me folder banao:
+Create this folder in your project:
 
 ```text
 .github/workflows
 ```
 
 ### Step 6
-Is folder ke andar workflow file banao:
+Inside this folder, create a workflow file:
 
 ```text
 my-actions.yml
 ```
 
 ### Step 7
-File me ye code likho:
+Add this code:
 
 ```yaml
 name: my-workflow
@@ -45,7 +45,7 @@ jobs:
 ```
 
 ### Step 8
-Commit aur push karo:
+Commit and push:
 
 ```bash
 git add .
@@ -54,14 +54,14 @@ git push
 ```
 
 ### Step 9
-GitHub me `Actions` tab open karke workflow check karo.
+Open the `Actions` tab on GitHub and check the workflow.
 
 ---
 
 ## 2. Running Multi Line Shell Commands
 
 ### Step 1
-`my-actions.yml` me ye code rakho:
+Keep this code in `my-actions.yml`:
 
 ```yaml
 name: my-workflow
@@ -77,7 +77,7 @@ jobs:
 ```
 
 ### Step 2
-Commit aur push karo:
+Commit and push:
 
 ```bash
 git add .
@@ -86,14 +86,14 @@ git push
 ```
 
 ### Step 3
-GitHub ke `Actions` tab me result check karo.
+Check the result in the GitHub `Actions` tab.
 
 ---
 
 ## 3. Using Actions
 
 ### Step 1
-Workflow me checkout action add karo:
+Add the checkout action to the workflow:
 
 ```yaml
 name: my-workflow
@@ -109,7 +109,7 @@ jobs:
 ```
 
 ### Step 2
-Commit aur push karo:
+Commit and push:
 
 ```bash
 git add .
@@ -118,7 +118,7 @@ git push
 ```
 
 ### Step 3
-GitHub me `Actions` tab check karo.
+Check the GitHub `Actions` tab.
 
 GitHub Actions Marketplace:
 
@@ -131,7 +131,7 @@ https://github.com/marketplace?type=actions
 ## 4. Running Multiple Jobs
 
 ### Step 1
-Workflow me do jobs banao:
+Create two jobs in the workflow:
 
 ```yaml
 name: my-workflow
@@ -155,7 +155,7 @@ jobs:
 ```
 
 ### Step 2
-Commit aur push karo:
+Commit and push:
 
 ```bash
 git add .
@@ -164,14 +164,14 @@ git push
 ```
 
 ### Step 3
-GitHub `Actions` tab me dono jobs check karo.
+Check both jobs in the GitHub `Actions` tab.
 
 ---
 
 ## 5. Running Multiple Jobs - Sequential
 
 ### Step 1
-Second job ko first job ke baad run karne ke liye `needs` use karo:
+Use `needs` to run the second job after the first job:
 
 ```yaml
 name: my-workflow
@@ -196,7 +196,7 @@ jobs:
 ```
 
 ### Step 2
-Commit aur push karo:
+Commit and push:
 
 ```bash
 git add .
@@ -205,14 +205,14 @@ git push
 ```
 
 ### Step 3
-GitHub `Actions` tab me check karo.
+Check the GitHub `Actions` tab.
 
 ---
 
 ## 6. Running Multiple Triggers
 
 ### Step 1
-Manual aur push dono triggers use karo:
+Use both manual and push triggers:
 
 ```yaml
 name: my-workflow
@@ -237,7 +237,7 @@ jobs:
 ```
 
 ### Step 2
-Commit aur push karo:
+Commit and push:
 
 ```bash
 git add .
@@ -246,17 +246,17 @@ git push
 ```
 
 ### Step 3
-GitHub `Actions` tab me check karo.
+Check the GitHub `Actions` tab.
 
 ---
 
 ## 7. Skipping a Workflow
 
 ### Step 1
-Koi change karo.
+Make any change in the project.
 
 ### Step 2
-Ye commands chalao:
+Run these commands:
 
 ```bash
 git add .
@@ -265,24 +265,24 @@ git push
 ```
 
 ### Step 3
-GitHub par check karo. Workflow skip hoga.
+Check GitHub. The workflow will be skipped.
 
 ---
 
 ## 8. Python CI
 
 ### Step 1
-New Python project banao.
+Create a new Python project.
 
 ### Step 2
-Git initialise karo:
+Initialize Git:
 
 ```bash
 git init
 ```
 
 ### Step 3
-Project structure:
+Use this project structure:
 
 ```text
 Python-CI/
@@ -294,7 +294,7 @@ Python-CI/
 ```
 
 ### Step 4
-`calculator.py`:
+Create `calculator.py`:
 
 ```python
 def add(a, b):
@@ -313,7 +313,7 @@ if __name__ == "__main__":
 ```
 
 ### Step 5
-`my-actions.yml`:
+Create `my-actions.yml`:
 
 ```yaml
 name: Python-CI
@@ -333,7 +333,7 @@ jobs:
 ```
 
 ### Step 6
-Commit aur push karo:
+Commit and push:
 
 ```bash
 git add .
@@ -342,14 +342,14 @@ git push
 ```
 
 ### Step 7
-GitHub `Actions` tab me check karo.
+Check the GitHub `Actions` tab.
 
 ---
 
 ## 9. Running Test Cases
 
 ### Step 1
-`test_calculator.py`:
+Create `test_calculator.py`:
 
 ```python
 import unittest
@@ -373,7 +373,7 @@ if __name__ == "__main__":
 ```
 
 ### Step 2
-Workflow update karo:
+Update the workflow:
 
 ```yaml
 name: Python-CI
@@ -399,7 +399,7 @@ jobs:
 ## 10. Job Artifacts
 
 ### Step 1
-Project structure:
+Use this project structure:
 
 ```text
 Python-CI/
@@ -413,7 +413,7 @@ Python-CI/
 ```
 
 ### Step 2
-`pyproject.toml`:
+Create `pyproject.toml`:
 
 ```toml
 [build-system]
@@ -431,7 +431,7 @@ py-modules = ["calculator"]
 ```
 
 ### Step 3
-`requirements.txt`:
+Create `requirements.txt`:
 
 ```text
 black==24.10.0
@@ -440,7 +440,7 @@ build==1.2.2.post1
 ```
 
 ### Step 4
-Workflow:
+Use this workflow:
 
 ```yaml
 name: Python CI
@@ -508,7 +508,7 @@ jobs:
 ## 11. Dependency Cache
 
 ### Step 1
-Python setup me cache add karo:
+Add cache to the Python setup:
 
 ```yaml
 - name: Set up Python
@@ -520,7 +520,7 @@ Python setup me cache add karo:
 ```
 
 ### Step 2
-Install commands same rahenge:
+Keep the install commands the same:
 
 ```yaml
 - name: Install linting tools
@@ -530,7 +530,7 @@ Install commands same rahenge:
 ```
 
 ### Step 3
-Build job me bhi cache use karo:
+Use cache in the build job also:
 
 ```yaml
 - name: Set up Python
@@ -546,17 +546,17 @@ Build job me bhi cache use karo:
 ## 12. Full CI Pipeline - Build, Test & Notify
 
 ### Step 1
-Slack me alerts ke liye channel banao.
+Create a Slack channel for alerts.
 
 ### Step 2
-Slack App banao:
+Create a Slack App:
 
 ```text
 Apps -> Add Apps -> App Directory -> Manage -> Build -> Create An App
 ```
 
 ### Step 3
-`From a Blank app` select karo.
+Select `From a Blank app`.
 
 App Name:
 
@@ -565,16 +565,16 @@ GitHub CI Notifications
 ```
 
 ### Step 4
-Workspace select karo aur app create karo.
+Select your workspace and create the app.
 
 ### Step 5
-Slack settings me `Incoming Webhooks` enable karo aur channel select karo.
+Enable `Incoming Webhooks` in Slack settings and select the channel.
 
 ### Step 6
-Webhook URL copy karo.
+Copy the Webhook URL.
 
 ### Step 7
-GitHub repository me jao:
+Go to your GitHub repository:
 
 ```text
 Settings -> Secrets and Variables -> Actions -> New repository secret
@@ -586,10 +586,10 @@ Secret name:
 SLACK_WEBHOOK
 ```
 
-Webhook URL paste karke save karo.
+Paste the Webhook URL and save it.
 
 ### Step 8
-Workflow me Slack notification add karo:
+Add Slack notification to the workflow:
 
 ```yaml
 name: Python-CI
@@ -623,7 +623,7 @@ jobs:
 
 ## Final Commands
 
-Har change ke baad ye commands use karo:
+Use these commands after every change:
 
 ```bash
 git add .
@@ -631,10 +631,10 @@ git commit -m "Update GitHub Actions practical"
 git push
 ```
 
-Phir GitHub me:
+Then open:
 
 ```text
 Repository -> Actions
 ```
 
-open karke workflow check karo.
+and check the workflow.
