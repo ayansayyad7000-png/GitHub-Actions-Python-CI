@@ -1,4 +1,72 @@
-# GitHub Actions Practical - ayansayyad
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=700&size=28&duration=2200&pause=650&color=2088FF&center=true&vCenter=true&repeat=true&width=900&lines=GitHub+Actions+Python+CI;Workflow+%E2%86%92+Jobs+%E2%86%92+Tests+%E2%86%92+Build;CI%2FCD+Practical+by+Ayan+Sayyad" alt="GitHub Actions Python CI animated header" />
+
+# ⚙️ GitHub Actions Python CI Practical
+
+### Beginner-Friendly Step-by-Step Notes by Ayan Sayyad
+
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![YAML](https://img.shields.io/badge/YAML-Workflow-CB171E?style=for-the-badge&logo=yaml&logoColor=white)
+![Level](https://img.shields.io/badge/Level-Beginner%20Friendly-238636?style=for-the-badge)
+
+**Workflows • Jobs • Triggers • Python CI • Tests • Artifacts • Cache • Slack Notifications**
+
+</div>
+
+---
+
+## 🚀 Start Here
+
+Follow this repository from top to bottom. Do not jump between sections.
+
+```text
+First Workflow
+      ↓
+Multi-Line Commands
+      ↓
+Using Actions
+      ↓
+Multiple Jobs
+      ↓
+Sequential Jobs
+      ↓
+Multiple Triggers
+      ↓
+Skip CI
+      ↓
+Python CI
+      ↓
+Unit Tests
+      ↓
+Artifacts
+      ↓
+Dependency Cache
+      ↓
+Build + Test + Notify
+```
+
+---
+
+## 📚 Practical Index
+
+| # | Topic | Main Goal |
+|---:|---|---|
+| 01 | Creating First Workflow | Create and run your first workflow |
+| 02 | Multi Line Shell Commands | Run multiple commands in one step |
+| 03 | Using Actions | Use actions from GitHub Marketplace |
+| 04 | Running Multiple Jobs | Run more than one job |
+| 05 | Sequential Jobs | Run one job after another |
+| 06 | Multiple Triggers | Run on manual trigger and push |
+| 07 | Skipping a Workflow | Skip CI for a commit |
+| 08 | Python CI | Run Python in GitHub Actions |
+| 09 | Running Test Cases | Run unit tests automatically |
+| 10 | Job Artifacts | Build and upload output files |
+| 11 | Dependency Cache | Speed up dependency installation |
+| 12 | Build, Test & Notify | Add Slack notification to CI |
+
+---
 
 ## 1. Creating First Workflow
 
@@ -621,7 +689,7 @@ jobs:
 
 ---
 
-## Final Commands
+## ✅ Final Commands
 
 Use these commands after every change:
 
@@ -638,3 +706,14 @@ Repository -> Actions
 ```
 
 and check the workflow.
+
+---
+
+<div align="center">
+
+<img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&weight=600&size=16&duration=1900&pause=600&color=A371F7&center=true&vCenter=true&repeat=true&width=760&lines=Write+Workflow+%E2%86%92+Push+%E2%86%92+Run+%E2%86%92+Check;Learn+CI%2FCD+One+Step+at+a+Time" alt="GitHub Actions footer animation" />
+
+**Ayan Sayyad**  
+GitHub Actions · Python · CI/CD · DevOps
+
+</div>
